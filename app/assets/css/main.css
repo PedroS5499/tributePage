@@ -2,21 +2,29 @@
 
 html,
 body {
-  margin: 0;
+  margin: 0 8px;
   padding: 0;
   position: relative;
   background: #0e0e0e;
+  color: #fff;
+
+  font-family: arial, sans-serif;
 }
 
 main#main{
   height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  align-self: center;
 }
 
 main#main .content{
   position: relative;
-  display: flex;
-
   top:0;
+  right: 0;
+  width: 50%;
+  margin-left: 50%;
 }
 
 .img-div{
@@ -29,10 +37,33 @@ main#main .content{
 }
 
 .img-div #image{
-  width: 100%;
   height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-h1 {
-  color: white;
+#tribute-links{
+  display: flex;
+
+  justify-content: space-around;
+}
+
+#tribute-links a{
+  background-color: rgba(100,100,100,.5);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+
+  line-height: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+a{
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#fff;
 }
